@@ -13,10 +13,13 @@ import net.minecraft.util.ResourceLocation;
 public class GuiFakeMainMenu extends GuiScreen {
 	private static final ResourceLocation texture = new ResourceLocation(
 			"selfadaptionmainmenu:textures/gui/mainmenu.png");
+	private static final ResourceLocation texture2 = new ResourceLocation(
+			"selfadaptionmainmenu:textures/gui/start.png");
 
 	@Override
 	public void initGui() {
-		this.buttonList.add(new GuiButton(0, this.width / 2 - 32, this.height / 2 - 32, 64, 64, ""));
+//		this.buttonList.add(new GuiButton(0, this.width / 2 - 32, this.height / 2 - 32, 64, 64, ""));
+//		this.buttonList.get(this.buttonList.size() - 1).visible = false;
 		super.initGui();
 	}
 
@@ -45,7 +48,8 @@ public class GuiFakeMainMenu extends GuiScreen {
 		bufferbuilder.pos(width + xOffset, 0, this.zLevel).tex((0 + width) * f, (0 + 0) * f).endVertex();
 		bufferbuilder.pos(0, 0, this.zLevel).tex((0 + 0) * f, (0 + 0) * f).endVertex();
 		tessellator.draw();
-
+		this.mc.getTextureManager().bindTexture(texture2);
+		this.drawTexturedModalRect(this.width / 2 - 32, this.height / 2 - 32, 0, 0, 128, 128);
 		super.drawScreen(mouseX, mouseY, partialTicks);
 	}
 }
