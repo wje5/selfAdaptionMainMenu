@@ -1,0 +1,16 @@
+[
+{
+  "modid": "selfadaptionmainmenu",
+  "name": "Self Adaption Main Menu",
+  "description": "Minecraft 1.12.2 Mod For Client",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["3DPinball"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,101 @@
+---- Minecraft Crash Report ----
+// Ouch. That hurt :(
+
+Time: 8/29/19 9:27 AM
+Description: Rendering screen
+
+java.lang.IllegalStateException: Not building!
+	at net.minecraft.client.renderer.BufferBuilder.finishDrawing(BufferBuilder.java:552)
+	at net.minecraft.client.renderer.Tessellator.draw(Tessellator.java:29)
+	at com.pinball3d.selfadaptionmainmenu.GuiFakeMainMenu.drawScreen(GuiFakeMainMenu.java:31)
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:368)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1177)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1207)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:441)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.minecraft.client.renderer.BufferBuilder.finishDrawing(BufferBuilder.java:552)
+	at net.minecraft.client.renderer.Tessellator.draw(Tessellator.java:29)
+	at com.pinball3d.selfadaptionmainmenu.GuiFakeMainMenu.drawScreen(GuiFakeMainMenu.java:31)
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:368)
+
+-- Screen render details --
+Details:
+	Screen name: com.pinball3d.selfadaptionmainmenu.GuiFakeMainMenu
+	Mouse location: Scaled: (279, 136). Absolute: (559, 207)
+	Screen size: Scaled: (427, 240). Absolute: (854, 480). Scale factor of 2
+Stacktrace:
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1177)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1207)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:441)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Mac OS X (x86_64) version 10.14.6
+	Java Version: 1.8.0_211, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 5843152296 bytes (5572 MB) / 6174015488 bytes (5888 MB) up to 6174015488 bytes (5888 MB)
+	JVM Flags: 2 total; -Xms6144M -Xmx6144M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.4.2705 5 mods loaded, 5 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID                   | Version      | Source                           | Signature |
+	|:------ |:-------------------- |:------------ |:-------------------------------- |:--------- |
+	| UCHIJA | minecraft            | 1.12.2       | minecraft.jar                    | None      |
+	| UCHIJA | mcp                  | 9.42         | minecraft.jar                    | None      |
+	| UCHIJA | FML                  | 8.0.99.99    | forgeSrc-1.12.2-14.23.4.2705.jar | None      |
+	| UCHIJA | forge                | 14.23.4.2705 | forgeSrc-1.12.2-14.23.4.2705.jar | None      |
+	| UCHIJA | selfadaptionmainmenu | 1.0.0        | bin                              | None      |
+
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'Intel Inc.' Version: '2.1 INTEL-12.10.12' Renderer: 'Intel Iris OpenGL Engine'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.2
+	OpenGL: Intel Iris OpenGL Engine GL version 2.1 INTEL-12.10.12, Intel Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because ARB_framebuffer_object is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 4x Intel(R) Core(TM) i5-4288U CPU @ 2.60GHz

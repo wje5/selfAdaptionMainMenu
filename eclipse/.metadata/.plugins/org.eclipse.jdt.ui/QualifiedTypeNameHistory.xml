@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.Mod"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.common.Mod"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.common.Mod.Instance"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.common.SidedProxy"/>
+<fullyQualifiedTypeName name="net.minecraftforge.client.MinecraftForgeClient"/>
+<fullyQualifiedTypeName name="net.minecraftforge.common.MinecraftForge"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.common.Mod.EventHandler"/>
+<fullyQualifiedTypeName name="com.pinball3d.selfadaptionmainmenu.EventHandler"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiMainMenu"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiYesNoCallback"/>
+<fullyQualifiedTypeName name="com.pinball3d.selfadaptionmainmenu.GuiFakeMainMenu"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager"/>
+<fullyQualifiedTypeName name="net.minecraftforge.oredict.OreDictionary"/>
+<fullyQualifiedTypeName name="net.minecraft.util.text.translation.I18n"/>
+<fullyQualifiedTypeName name="net.minecraft.client.resources.I18n"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiButton"/>
+</qualifiedTypeNameHistroy>
