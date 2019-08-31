@@ -16,4 +16,5 @@
 <fullyQualifiedTypeName name="net.minecraft.util.text.translation.I18n"/>
 <fullyQualifiedTypeName name="net.minecraft.client.resources.I18n"/>
 <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiButton"/>
+<fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
 </qualifiedTypeNameHistroy>

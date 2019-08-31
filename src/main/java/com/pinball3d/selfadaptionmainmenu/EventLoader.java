@@ -13,7 +13,6 @@ public class EventLoader {
 	@SubscribeEvent()
 	public void openGui(GuiOpenEvent event) {
 		if (event.getGui() instanceof GuiMainMenu) {
-			System.out.println(1111111);
 			event.setGui(new GuiFakeMainMenu());
 		}
 	}
