@@ -13,13 +13,12 @@ import net.minecraft.util.ResourceLocation;
 public class GuiFakeMainMenu extends GuiScreen {
 	private static final ResourceLocation texture = new ResourceLocation(
 			"selfadaptionmainmenu:textures/gui/mainmenu.png");
-//	private static final ResourceLocation texture2 = new ResourceLocation(
-//			"selfadaptionmainmenu:textures/gui/white.png");
+	private static final ResourceLocation texture2 = new ResourceLocation(
+			"selfadaptionmainmenu:textures/gui/white.png");
 
 	@Override
 	public void initGui() {
 		this.buttonList.add(new GuiButtonStart(0, this.width / 2 - 32, this.height / 2 - 32 + 70, ""));
-//		this.buttonList.add(new GuiButton(0, this.width / 2 - 32, this.height / 2 - 32 + 70, 64, 64, ""));
 		super.initGui();
 	}
 
@@ -37,10 +36,10 @@ public class GuiFakeMainMenu extends GuiScreen {
 		Tessellator tessellator = Tessellator.getInstance();
 		BufferBuilder bufferbuilder = tessellator.getBuffer();
 		bufferbuilder.begin(7, DefaultVertexFormats.POSITION_TEX);
-		int width = 256;
-		int height = 144;
-		int xOffset = this.width - width;
-		int yOffset = this.height - height;
+		double width = 1919.0D / 2048.0D;
+		double height = 1080.0D / 2048.0D;
+		double xOffset = this.width - width;
+		double yOffset = this.height - height;
 		float f = 0.00390625F;
 		bufferbuilder.pos(0, height + yOffset, this.zLevel).tex((0 + 0) * f, (0 + height) * f).endVertex();
 		bufferbuilder.pos(width + xOffset, height + yOffset, this.zLevel).tex((0 + width) * f, (0 + height) * f)

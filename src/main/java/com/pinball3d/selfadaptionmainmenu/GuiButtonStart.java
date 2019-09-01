@@ -15,6 +15,9 @@ public class GuiButtonStart extends GuiButton {
 	public void drawButton(Minecraft mc, int mouseX, int mouseY, float partialTicks) {
 		this.hovered = mouseX >= this.x && mouseY >= this.y && mouseX < this.x + this.width
 				&& mouseY < this.y + this.height;
+//		SimpleTexture itextureobject = new SimpleTexture(texture);
+//		mc.getTextureManager().loadTexture(texture, itextureobject);
+//		GlStateManager.bindTexture(itextureobject.getGlTextureId());
 		mc.getTextureManager().bindTexture(texture);
 		this.drawTexturedModalRect(this.x, this.y, 0, this.hovered ? 64 : 0, 64, 64);
 	}
