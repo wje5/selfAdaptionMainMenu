@@ -13,8 +13,9 @@ public class GuiFakeMainMenu extends GuiScreen {
 
 	@Override
 	public void initGui() {
-		this.buttonList.add(new GuiButtonStart(0, this.width / 2 - 32, this.height / 2 - 32 + 70, ""));
-		System.out.println(this.width + "|" + this.height);
+		this.buttonList.add(
+				new GuiButtonStart(0, ((int) (181.0D / 427.0D * this.width)), ((int) (158.0D / 240.0D * this.height)),
+						((int) (64.0D / 427.0D * this.width)), ((int) (64.0D / 240.0D * this.height)), ""));
 		super.initGui();
 	}
 
